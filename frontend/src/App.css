@@ -1,0 +1,121 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+/* new stuff below */
+.welcome-header {
+  background-color: #f8f9fa; /* Light gray background */
+  padding: 2rem;
+  border-radius: 10px; /* Rounded edges */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 2rem; /* Space below the header */
+  text-align: center; /* Center align the content */
+}
+
+.welcome-header h1 {
+  color: #333; /* Dark text color for readability */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  font-size: 2.5rem; /* Large and prominent */
+  margin: 0; /* Remove default margin */
+}
+
+.welcome-header p {
+  color: #555; /* Softer gray for description */
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem; /* Slightly smaller font for the paragraph */
+  margin-top: 0.5rem; /* Add space above */
+}
+
+/* Table container */
+.table-container {
+  margin: 2rem auto;
+  max-width: 1200px;
+  overflow-x: auto; /* Handle overflow on smaller screens */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Table styles */
+.table-container table {
+  width: 100%;
+  border-collapse: collapse; /* Remove gaps between table cells */
+  background-color: #fff; /* White background for the table */
+}
+
+/* Table header */
+.table-container thead {
+  background-color: #f4f4f4; /* Light gray background for the header */
+}
+
+.table-container th {
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd; /* Subtle border below the header */
+  color: #333;
+}
+
+/* Table body rows */
+.table-container tbody tr {
+  border-bottom: 1px solid #ddd; /* Subtle border between rows */
+}
+
+.table-container td {
+  padding: 1rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Hover effect for rows */
+.table-container tbody tr:hover {
+  background-color: #f9f9f9; /* Slight background color change on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .table-container table {
+    font-size: 0.9rem; /* Slightly smaller font size for mobile */
+  }
+}
